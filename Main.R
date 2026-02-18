@@ -56,9 +56,10 @@ plot(x = all_temp, y = all_ozone,
      main = "Temperature's Effect on Ozone",
      xlab = "Temp",
      ylab = "Ozone")
-abline(lm(Ozone ~ Temp, data = my_df), col = "blue", lwd = 2)
 
-# 4.
+# -------- Part 4 -------
+
+abline(lm(Ozone ~ Temp, data = my_df), col = "blue", lwd = 2)
 # The probability that the temperature during these months is less than 70:
 pnorm(q = 70, mean = mean(all_temp), sd = sd(all_temp), lower.tail = T)
 
